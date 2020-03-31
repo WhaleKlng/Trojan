@@ -12,7 +12,7 @@ red(){
 version_lt(){
     test "$(echo "$@" | tr " " "\n" | sort -rV | head -n 1)" != "$1"; 
 }
-#copy from 秋水逸冰 ss scripts
+
 if [[ -f /etc/redhat-release ]]; then
     release="centos"
     systemPackage="yum"
@@ -417,10 +417,9 @@ function update_trojan(){
 start_menu(){
     clear
     green " ======================================="
-    green " 介绍：一键安装trojan      "
+    green " 介绍：一键安装trojan ————whale     "
     green " 系统：centos7+/debian9+/ubuntu16.04+"
-    green " 网站：www.atrandys.com              "
-    green " Youtube：Randy's 堡垒                "
+    green " 网站：https://www.whaleklng.xyz/              "
     blue " 声明："
     red " *请不要在任何生产环境使用此脚本"
     red " *请不要有其他程序占用80和443端口"
